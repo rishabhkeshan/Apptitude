@@ -32,9 +32,9 @@ function App() {
           <br />
           <h1>Coming soon on</h1>
           <span>
-            <img src="PlayStore.png"></img>
+            <img src="PlayStore.png" alt="Play Store link"></img>
 
-            <img src="AppStore.png"></img>
+            <img src="AppStore.png" alt="App store link"></img>
           </span>
         </div>
         <div class="column-right">
