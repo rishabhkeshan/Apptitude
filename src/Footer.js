@@ -11,25 +11,28 @@ function Footer() {
         <a
           href="https://www.instagram.com/acmvit/"
           target="_blank"
+          rel = "noopener noreferrer"
           style={{ color: "white", textDecoration: "none" }}
         >
-          <img src={instaIcon} />
+          <img src={instaIcon} alt="Ig" />
           <span> </span>
         </a>
         <a
           href="https://www.facebook.com/ACM.VITU"
           target="_blank"
+          rel = "noopener noreferrer"
           style={{ color: "white", textDecoration: "none" }}
         >
-          <img src={FacebookIcon} />
+          <img src={FacebookIcon} alt="Fb"/>
           <span> </span>
         </a>
         <a
           href="https://www.linkedin.com/company/acm-vit-chapter/"
           target="_blank"
+          rel = "noopener noreferrer"
           style={{ color: "white", textDecoration: "none" }}
         >
-          <img src={LinkedinIcon} />
+          <img src={LinkedinIcon} alt="Linkedin" />
         </a>
       </p>
       <p
