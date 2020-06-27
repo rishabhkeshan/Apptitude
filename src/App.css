@@ -43,6 +43,7 @@ height:100vh;
   font-weight: 800;
   background: -webkit-linear-gradient(#8AA1EF, #313B99);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   justify-content: center;
   align-items: center;
