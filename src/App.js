@@ -18,11 +18,11 @@ function App() {
       <NavigationBar />
       <div class="flex-container">
         <div class="column-left">
-          <h1 style={{ fontSize: "6em", fontWeight:"500" }}>
+          <h1 style={{ fontSize: "6em", fontWeight:"600" }}>
             <span style={{ color: "#7289D9" }}>App</span>titude
             <hr style={{ backgroundColor: "white" }} />
           </h1>
-          <p style={{ fontSize: "1.2em" }}>
+          <p style={{ fontSize: "1.1em", maxWidth:'600px', fontWeight:'500', lineHeight:'120%' } }>
             Running out of ideas, this endless quarantine? Well worry not
             student app devs, ACM-VIT has got your back. Sit back and get
             thinking as our team takes on the wheel and throws you features that
@@ -31,20 +31,20 @@ function App() {
             innovation within 24 hours.
           </p>
           <br />
-          <h4>Event Date</h4>
+          <h2 style={{fontWeight:'700'}}><strong>Event Date</strong></h2>
           <p>10-11 July, 2020</p>
           <br />
           <h1>Coming soon on</h1>
           <span>
             <img src={PlayStore} alt="Play Store link"></img>
-
+            <span>  </span>
             <img src={AppStore} alt="App store link"></img>
           </span>
         </div>
         <div class="column-right">
           <Countdown />
           <br />
-          <h2 style={{marginTop:'55%'}}>
+          <h2 style={{marginTop:'55%', fontWeight:'600'}}>
             Get notified
             <br />
             when we launch

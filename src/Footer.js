@@ -1,31 +1,45 @@
 import React from 'react';
 import './App.css';
-import {
-    FaLinkedin,
-    FaInstagram,
-    FaFacebook
-} from "react-icons/fa";
 
+import instaIcon from './instaIcon.svg';
+import LinkedinIcon from './LinkedinIcon.svg';
+import FacebookIcon from './FacebookIcon.svg';
 function Footer() {
   return (
-    <div >
+    <div style={{ marginBottom: "0", paddingBottom: "0" }}>
       <p style={{ color: "white", textAlign: "center", marginBottom: "0" }}>
-        <a href="https://www.instagram.com/acmvit/" style={{ color: "white" }}>
-          <FaInstagram />
+        <a
+          href="https://www.instagram.com/acmvit/"
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          <img src={instaIcon} />
           <span> </span>
         </a>
-        <a href="https://www.facebook.com/ACM.VITU" style={{ color: "white" }}>
-          <FaFacebook />
+        <a
+          href="https://www.facebook.com/ACM.VITU"
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          <img src={FacebookIcon} />
           <span> </span>
         </a>
         <a
           href="https://www.linkedin.com/company/acm-vit-chapter/"
-          style={{ color: "white" }}
+          target="_blank"
+          style={{ color: "white", textDecoration: "none" }}
         >
-          <FaLinkedin />
+          <img src={LinkedinIcon} />
         </a>
       </p>
-      <p style={{ color: "#688290", textAlign: "center"}}>
+      <p
+        style={{
+          color: "#688290",
+          textAlign: "center",
+          marginBottom: "0",
+          paddingBottom: "0",
+        }}
+      >
         An initiative by ACM-VIT
       </p>
     </div>

@@ -5,6 +5,13 @@
   font-weight: 300;
   font-style: normal;
 }
+@font-face {
+  font-family: "Cerebri Sans";
+  src: url(./fonts/Cerebri-Sans/CerebriSans-SemiBold.eot);
+  src: url(./fonts/Cerebri-Sans/CerebriSans-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Cerebri Sans";
@@ -28,6 +35,7 @@ body {
   Helvetica,
   Arial,
   sans-serif !important;
+  font-weight: 600 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
