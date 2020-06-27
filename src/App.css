@@ -4,7 +4,7 @@ flex-direction: column;
 height:100%;
 width:100%;
 }
-.containe{
+.containe, .containes{
 display: flex;
 flex-direction: column;
 height:100%;
@@ -138,13 +138,10 @@ font-size: 0.6em;
   font-size: 1.2em !important;
 }
 .imga{
-  width: 30%;
+  width: 20%;
   height:auto;
 }
-.imgaa{
-  width: 30%;
-  height:auto;
-}
+
 
 @media screen and (min-width: 300px) and (max-width: 1224px) {
  .appName {
@@ -162,4 +159,37 @@ font-size: 0.6em;
    align-items: center;
    color: #C4C4C4;
  }
+}
+@media screen and (min-width: 1024px) {
+.containe{
+display: none;
+}
+.containes{
+display: none;
+}
+.contained{
+  display: block;
+}
+}
+
+@media screen and (max-width: 1023px) {
+.contained{
+display: none;
+}
+@media screen and (max-height: 700px) {
+.containes, .contained{
+display: none;
+}
+.containe{
+  display:block;
+}
+}
+@media screen and (min-height: 700px) {
+.containe{
+display: none;
+}
+.containes{
+  display:block;
+}
+}
 }

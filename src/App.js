@@ -13,14 +13,8 @@ import FormInput from './FormInput';
 
 
 function App() {
-const width = window.innerWidth ||
-  document.documentElement.clientWidth ||
-  document.body.clientWidth;
-const height = window.innerHeight ||
-  document.documentElement.clientHeight ||
-  document.body.clientHeight;
-  if (width > 1023) {
   return (
+    <React.Fragment>
     <div className="contained">
       <NavigationBar />
       <div className="flex-container">
@@ -62,7 +56,7 @@ const height = window.innerHeight ||
           <br />
           <h2
             style={{
-              marginTop: "40%",
+              marginTop: "30%",
               fontWeight: "600",
               fontSize: "2.1em",
             }}
@@ -73,13 +67,9 @@ const height = window.innerHeight ||
           <FormInput sub="subm" emai="ema"/>
         </div>
       </div>
-      <Footer />
+      <Footer />   
     </div>
-  );
-  }
-  else{
-    if(height< 700){
-    return(
+    
         <div className="containe">
          <NavigationBar/>
          <div className="contents">
@@ -115,11 +105,9 @@ const height = window.innerHeight ||
           </div>
          <Footer/>
       </div>
-    );
-   }
-   else{
-     return(
-        <div className="containe">
+
+      
+        <div className="containes">
          <NavigationBar/>
          <div className="contentsh">
           <Countdown classn="Countdown-col-elemen" eli="elii" el="ell"/>
@@ -153,10 +141,10 @@ const height = window.innerHeight ||
           </span>
           </div>
          <Footer/>
-      </div>       
+      </div>  
+      </React.Fragment>     
      )
-   }
-  }
+   
 }
 
 export default App;
