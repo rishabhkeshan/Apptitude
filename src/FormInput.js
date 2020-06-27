@@ -50,8 +50,6 @@ class FormInput extends React.Component {
           }}
           type="email"
           name="email"
-          oninvalid="this.setCustomValidity('Username cannot be empty.')"
-          onchange="this.setCustomValidity('')"
           onChange={this.updateInput}
           value={this.state.email}
           placeholder="Email address"

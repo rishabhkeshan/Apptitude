@@ -14,10 +14,10 @@ import FormInput from './FormInput';
 
 function App() {
   return (
-    <div class="contained">
+    <div className="contained">
       <NavigationBar />
-      <div class="flex-container">
-        <div class="column-left">
+      <div className="flex-container">
+        <div className="column-left">
           <h1 style={{ fontSize: "6em", fontWeight: "600" }}>
             <span style={{ color: "#7289D9", fontWeight:'700' }}>App</span>titude
             <hr style={{ backgroundColor: "white" }} />
@@ -50,7 +50,7 @@ function App() {
             <img src={AppStore} alt="App store link"></img>
           </span>
         </div>
-        <div class="column-right">
+        <div className="column-right">
           <Countdown />
           <br />
           <h2

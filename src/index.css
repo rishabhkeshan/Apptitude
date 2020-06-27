@@ -35,9 +35,11 @@
   font-weight: 800;
   font-style: normal;
 }
-body {
+body,html {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
   font-family: "Cerebri Sans",
   Helvetica,
   Arial,
@@ -48,7 +50,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
 }
-
 code {
 font-family: "Cerebri Sans",
 Helvetica,
