@@ -6,7 +6,11 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {
   NavigationBar
 } from './Navbar';
-import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
+import AppStore from "./AppStore.png";
+import PlayStore from "./PlayStore.png";
+import Footer from './Footer';
+import FormInput from './FormInput';
+
 
 function App() {
   return (
@@ -14,7 +18,7 @@ function App() {
       <NavigationBar />
       <div class="flex-container">
         <div class="column-left">
-          <h1 style={{ fontSize: "6em" }}>
+          <h1 style={{ fontSize: "6em", fontWeight:"500" }}>
             <span style={{ color: "#7289D9" }}>App</span>titude
             <hr style={{ backgroundColor: "white" }} />
           </h1>
@@ -32,40 +36,23 @@ function App() {
           <br />
           <h1>Coming soon on</h1>
           <span>
-            <img src="PlayStore.png" alt="Play Store link"></img>
+            <img src={PlayStore} alt="Play Store link"></img>
 
-            <img src="AppStore.png" alt="App store link"></img>
+            <img src={AppStore} alt="App store link"></img>
           </span>
         </div>
         <div class="column-right">
           <Countdown />
           <br />
-          <h2>
+          <h2 style={{marginTop:'55%'}}>
             Get notified
             <br />
             when we launch
           </h2>
+          <FormInput/>
         </div>
-      </div>
-      <p style={{ color: "white", textAlign: "center" }}>
-        <a href="https://www.instagram.com/acmvit/" style={{ color: "white" }}>
-          <FaInstagram />
-          <span> </span>
-        </a>
-        <a href="https://www.facebook.com/ACM.VITU" style={{ color: "white" }}>
-          <FaFacebook />
-          <span> </span>
-        </a>
-        <a
-          href="https://www.linkedin.com/company/acm-vit-chapter/"
-          style={{ color: "white" }}
-        >
-          <FaLinkedin />
-        </a>
-      </p>
-      <p style={{ color: "#688290", textAlign: "center" }}>
-        An initiative by ACM-VIT
-      </p>
+       </div>
+      <Footer/>
     </div>
   );
 }
