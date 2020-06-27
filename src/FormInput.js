@@ -11,12 +11,12 @@ class FormInput extends React.Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    if(this.state.email==""){
+    if(this.state.email===""){
         alert("Please enter your email address.")
         return false;
     }
     const db = firebase.firestore();
-    const userRef = db.collection("UserEmail").add({
+    db.collection("UserEmail").add({
       email:this.state.email
     });
     alert(
