@@ -6,7 +6,7 @@ import LinkedinIcon from './LinkedinIcon.svg';
 import FacebookIcon from './FacebookIcon.svg';
 function Footer() {
   return (
-    <div style={{ marginBottom: "0", paddingBottom: "0", position:'absolute', width:'100%', bottom:'0' }}>
+    <div style={{ marginBottom: "0", paddingBottom: "0", position:'relative', width:'100%', bottom:'0' }}>
       <p style={{ color: "white", textAlign: "center", marginBottom: "0" }}>
         <a
           href="https://www.instagram.com/acmvit/"
