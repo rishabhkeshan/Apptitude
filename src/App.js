@@ -52,9 +52,9 @@ const height = window.innerHeight ||
           <br />
           <h1 >Coming soon on</h1>
           <span>
-            <img  src={PlayStore} alt="Play Store link"></img>
+            <img className="imgaa" src={PlayStore} alt="Play Store link"></img>
             <span> </span>
-            <img  src={AppStore} alt="App store link"></img>
+            <img className="imgaa" src={AppStore} alt="App store link"></img>
           </span>
         </div>
         <div className="column-right">
