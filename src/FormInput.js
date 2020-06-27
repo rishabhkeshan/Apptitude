@@ -41,20 +41,22 @@ class FormInput extends React.Component {
             border: "none",
             borderBottom: "2px solid #C4C4C4",
             borderBottomWidth: "1",
-            marginRight: "15px",
+            marginRight: "1em",
             boxShadow: "none",
             outline: "none",
-            width: "330px",
+            width: "20em",
             padding: "0.3em",
             fontWeight: "700",
           }}
           type="email"
           name="email"
+          className = "emai"
           onChange={this.updateInput}
           value={this.state.email}
           placeholder="Email address"
         />
         <input
+          className="sub"
           style={{
             backgroundColor: "#3A44A1",
             color: "white",

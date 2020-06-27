@@ -3,7 +3,6 @@ import "./App.css";
 class Countdown extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       days: 0,
       hours: 0,
@@ -75,45 +74,44 @@ class Countdown extends Component {
 
   render() {
     const countDown = this.state;
-
     return (
       <div className="Countdown">
         <span className="Countdown-col">
-          <span className="Countdown-col-element">
-            <strong className="el">
+          <span className={`${ this.props.classn }`}>
+            <strong className={`${ this.props.el }`}>
               {this.addLeadingZeros(countDown.days)}
             </strong>
             <span>{countDown.days === 1 ? "Day " : "Days "}</span>
           </span>
         </span>
         <br />
-        <strong className="eli"> : </strong>
+        <strong className={`${ this.props.eli }`}> : </strong>
         <br />
         <span className="Countdown-col">
-          <span className="Countdown-col-element">
-            <strong className="el">
+          <span className={`${ this.props.classn }`}>
+            <strong className={`${ this.props.el }`}>
               {this.addLeadingZeros(countDown.hours)}
             </strong>
             <span>Hours</span>
           </span>
         </span>
         <br />
-        <strong className="eli"> : </strong>
+        <strong className={`${ this.props.eli }`}> : </strong>
         <br />
         <span className="Countdown-col">
-          <span className="Countdown-col-element">
-            <strong className="el">
+          <span className={`${ this.props.classn }`}>
+            <strong className={`${ this.props.el }`}>
               {this.addLeadingZeros(countDown.min)}
             </strong>
             <span>Minutes </span>
           </span>
         </span>
         <br />
-        <strong className="eli"> : </strong>
+        <strong className={`${ this.props.eli }`}> : </strong>
         <br />
         <span className="Countdown-col">
-          <span className="Countdown-col-element">
-            <strong className="el">
+          <span className={`${ this.props.classn }`}>
+            <strong className={`${ this.props.el }`}>
               {this.addLeadingZeros(countDown.sec)}
             </strong>
             <span>Seconds</span>
