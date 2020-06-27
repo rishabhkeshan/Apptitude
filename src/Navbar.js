@@ -6,7 +6,7 @@ const Styles = styled.div`
   a, .navbar-nav, .navbar-light .nav-link {
     color: white;
     &:hover { color: #ddd; }
-    font-size: 1.1em;
+    font-size: 0.9em;
   }
   .navbar-brand {
     font-size: 1.4em;

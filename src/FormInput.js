@@ -50,13 +50,13 @@ class FormInput extends React.Component {
           }}
           type="email"
           name="email"
-          className = "emai"
+          className={`${ this.props.emai }`}
           onChange={this.updateInput}
           value={this.state.email}
           placeholder="Email address"
         />
         <input
-          className="sub"
+          className={`${ this.props.sub }`}
           style={{
             backgroundColor: "#3A44A1",
             color: "white",
