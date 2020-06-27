@@ -69,7 +69,7 @@ function App() {
       </div>
       <Footer />   
     </div>
-    
+
         <div className="containe">
          <NavigationBar/>
          <div className="contents">
@@ -89,10 +89,15 @@ function App() {
               one or go solo and test your creative boundaries to give birth to an
               innovation within 24 hours.
             </p>
-                      <h2 className="des" style={{ fontWeight: "700" }}>
-            <strong>Event Date</strong>
-          </h2>
-          <p className="des">10-11 July 2020</p>
+          < h2 className = "des"
+                      style = {
+                        {
+                          fontWeight: "800",
+                          marginBottom:'0'
+                        }
+                      } >
+            Event Date : 
+          <span style={{fontWeight:300}} > 10-11 July 2020</span></h2>
           <br />
             < FormInput sub="sub" emai="emai" />
             <br/>
@@ -126,10 +131,15 @@ function App() {
               one or go solo and test your creative boundaries to give birth to an
               innovation within 24 hours.
             </p>
-                      <h2 className="des" style={{ fontWeight: "700" }}>
-            <strong>Event Date</strong>
-          </h2>
-          <p className="des">10-11 July 2020</p>
+          < h2 className = "des"
+                      style = {
+                        {
+                          fontWeight: "800",
+                          marginBottom:'0'
+                        }
+                      } >
+            Event Date : 
+          <span className="des"> 10-11 July 2020</span></h2>
           <br />
             < FormInput sub="sub" emai="emai" />
             <br/>
