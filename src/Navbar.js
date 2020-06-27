@@ -16,9 +16,9 @@ const Styles = styled.div`
   }
 `;
 export const NavigationBar = () => (
-         <Styles>
+         <Styles style={{ backgroundColor: "#40454B", width:'100%' }}>
            <Navbar
-             style={{ backgroundColor: "#40454B" }}
+             style={{ backgroundColor: "#40454B", width:'100%'  }}
              expand="lg"
            >
              <Navbar.Brand href="/">

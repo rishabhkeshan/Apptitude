@@ -28,6 +28,13 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: "Cerebri Sans";
+  src: url(./fonts/Cerebri-Sans/CerebriSans-ExtraBold.eot);
+  src: url(./fonts/Cerebri-Sans/CerebriSans-ExtraBold.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
 body {
   margin: 0;
   padding: 0;
@@ -36,6 +43,7 @@ body {
   Arial,
   sans-serif !important;
   font-weight: 600 !important;
+  background-image: linear-gradient(#303136, #26272A);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 

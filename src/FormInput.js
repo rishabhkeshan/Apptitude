@@ -3,19 +3,26 @@ import './App.css';
 
 
 function FormInput() {
+  function handleSubmit(e){
+      e.preventDefault();
+      alert("Thank you for showing interest in the event. You will be notified soon.")
+
+  }  
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
     < input style = {
         {
-            backgroundColor: '#313131',
+            backgroundColor: 'inherit',
             color: 'white',
             border: 'none',
             borderBottom: '2px solid #C4C4C4',
             borderBottomWidth: '1',
-            marginRight: '5px',
+            marginRight: '15px',
             boxShadow: "none",
             outline:"none",
-            width:"300px"
+            width:"330px",
+            paddingBottom:'0.5em',
+            fontWeight:'700'
         }
     }
     type = "text"
@@ -27,8 +34,8 @@ function FormInput() {
                 color: 'white',
                 border: 'none',
                 borderRadius: '5px',
-                height: '2.4em',
-                width: '8em',
+                height: '2.6em',
+                width: '9em',
                 outline: 'none',
                 textAlign: 'center',
                 fontWeight: '600' ,
