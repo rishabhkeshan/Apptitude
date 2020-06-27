@@ -20,7 +20,7 @@ function App() {
       <div className="flex-container">
         <div className="column-left">
           <h1 className="appName" style={{ fontSize: "6em", fontWeight: "600" }}>
-            <span style={{ color: "#7289D9", fontWeight:'700' }}>App</span>titude
+            <span className="grad"style={{ fontWeight:'700' }}>App</span>titude
             <hr style={{ backgroundColor: "white" }} />
           </h1>
           <p 
@@ -44,7 +44,7 @@ function App() {
           </h2>
           <p >10-11 July, 2020</p>
           <br />
-          <h1 >Coming soon on</h1>
+          <h2 >Coming soon on</h2>
           <span>
             <img className="imgaa" src={PlayStore} alt="Play Store link"></img>
             <span> </span>

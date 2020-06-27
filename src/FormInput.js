@@ -7,28 +7,26 @@ class FormInput extends React.Component {
     super();
     this.state = {
       email: "",
+      submitButton:"Notify Me",
+      disabled:"true"
     };
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    if(this.state.email===""){
-        alert("Please enter your email address.")
-        return false;
-    }
     const db = firebase.firestore();
     db.collection("UserEmail").add({
       email:this.state.email
     });
-    alert(
-      "Thank you for showing interest in the event. You will be notified soon."
-    );
-      this.setState({
-    email: ""
-  });
+      setTimeout(this.setState({
+    email: "",
+    submitButton:"Okay",
+    disabled:"true"
+  }),5000);
   };
   updateInput = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
+      submitButton: "Notify Me",
     });
   };
   render() {
@@ -50,13 +48,14 @@ class FormInput extends React.Component {
           }}
           type="email"
           name="email"
-          className={`${ this.props.emai }`}
+          className={`${this.props.emai}`}
           onChange={this.updateInput}
           value={this.state.email}
           placeholder="Email address"
+          required
         />
         <input
-          className={`${ this.props.sub }`}
+          className={`${this.props.sub}`}
           style={{
             backgroundColor: "#3A44A1",
             color: "white",
@@ -67,10 +66,11 @@ class FormInput extends React.Component {
             outline: "none",
             textAlign: "center",
             fontWeight: "600",
+            transition:"all 2s",
             fontFamily: "inherit",
           }}
           type="submit"
-          value="Notify me"
+          value={this.state.submitButton}
         />
       </form>
     );

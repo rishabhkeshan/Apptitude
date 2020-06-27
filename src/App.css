@@ -67,6 +67,12 @@ color:white;
   justify-content: center;
   align-items: center;
 }
+.grad{
+    background: -webkit-linear-gradient(#8AA1EF, #313B99);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .ell{
   /* color: linear-gradient(, ); */
   font-size: 2.2em ;
