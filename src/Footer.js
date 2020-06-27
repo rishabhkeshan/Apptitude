@@ -39,7 +39,7 @@ function Footer() {
         style={{
           color: "#688290",
           textAlign: "center",
-          paddingBottom: "0",
+          marginBottom: "5px",
         }}
       >
         An initiative by ACM-VIT
