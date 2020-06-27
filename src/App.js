@@ -89,6 +89,7 @@ function App() {
               one or go solo and test your creative boundaries to give birth to an
               innovation within 24 hours.
             </p>
+            <br/>
           < h2 className = "des"
                       style = {
                         {
@@ -131,6 +132,7 @@ function App() {
               one or go solo and test your creative boundaries to give birth to an
               innovation within 24 hours.
             </p>
+            <br/>
           < h2 className = "des"
                       style = {
                         {
