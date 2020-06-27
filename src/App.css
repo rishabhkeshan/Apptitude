@@ -147,6 +147,13 @@ font-size: 0.6em;
   width: 20%;
   height:auto;
 }
+.animate {
+  transition: transform 8.35s ease-in-out;
+}
+
+.animate.grow {
+  transform: scale(1.5);
+}
 
 
 @media screen and (min-width: 300px) and (max-width: 1224px) {

@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
 import firebase from "./Firestore";
-
+import classNames from "classnames";
+import styles from './App.css';
 class FormInput extends React.Component {
   constructor() {
     super();
     this.state = {
       email: "",
-      submitButton:"Notify Me",
-      disabled:"true"
+      submitButton: "Notify Me",
+      backColor: "#3A44A1"
     };
   }
   handleSubmit = (e) => {
@@ -17,11 +18,12 @@ class FormInput extends React.Component {
     db.collection("UserEmail").add({
       email:this.state.email
     });
+    this.refs.btn.setAttribute("disabled", "disabled");
       setTimeout(this.setState({
     email: "",
-    submitButton:"Okay",
-    disabled:"true"
-  }),5000);
+    submitButton:"Added",
+    backColor:"#5cb85c"
+  }),9000);
   };
   updateInput = (e) => {
     this.setState({
@@ -48,7 +50,11 @@ class FormInput extends React.Component {
           }}
           type="email"
           name="email"
-          className={`${this.props.emai}`}
+          className={classNames(
+            styles.animate,
+            styles.animate && styles.grow,
+            `${this.props.emai}`
+          )}
           onChange={this.updateInput}
           value={this.state.email}
           placeholder="Email address"
@@ -56,8 +62,9 @@ class FormInput extends React.Component {
         />
         <input
           className={`${this.props.sub}`}
+          ref="btn"
           style={{
-            backgroundColor: "#3A44A1",
+            backgroundColor: `${this.state.backColor}`,
             color: "white",
             border: "none",
             borderRadius: "5px",
@@ -66,7 +73,7 @@ class FormInput extends React.Component {
             outline: "none",
             textAlign: "center",
             fontWeight: "600",
-            transition:"all 2s",
+            transition: "all 2s",
             fontFamily: "inherit",
           }}
           type="submit"
