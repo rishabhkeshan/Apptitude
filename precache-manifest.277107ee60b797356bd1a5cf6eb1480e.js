@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0cc7c03a619d29d945a43a832481dd5c",
+    "revision": "9a03f9d1d2c08b682df4ce1d7ba3b290",
     "url": "/Apptitude/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Apptitude/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "8219520d124e9f487166",
-    "url": "/Apptitude/static/css/main.8b92e52b.chunk.css"
+    "revision": "203c510b237e91e3c149",
+    "url": "/Apptitude/static/css/main.fbfc54fc.chunk.css"
   },
   {
     "revision": "3398e6b0b441ade81d5c",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Apptitude/static/js/2.5534c1a4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8219520d124e9f487166",
-    "url": "/Apptitude/static/js/main.cc326854.chunk.js"
+    "revision": "203c510b237e91e3c149",
+    "url": "/Apptitude/static/js/main.cb6a2ecc.chunk.js"
   },
   {
     "revision": "dc8b9a3628b1c5f681fd",
