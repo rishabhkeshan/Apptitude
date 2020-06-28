@@ -14,7 +14,7 @@ margin:0 auto;
 padding:0;
 text-align: center;
 box-sizing: border-box;
-  background-image: linear-gradient(#303136, #26272A);
+
 color:white;
 }
 
@@ -231,5 +231,9 @@ position:relative !important;
 .imga{
   width:13vw;
   height:auto;
+}
+.mobile-container-small,
+.mobile-container-large{
+    background-image: linear-gradient(#303136, #26272A);
 }
 }
