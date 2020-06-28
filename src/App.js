@@ -147,7 +147,7 @@ function App() {
               fontSize: "1em",
               fontWeight: "500",
               lineHeight: "125%",
-              maxWidth: "84vw",
+              maxWidth: "85vw",
               margin: "0 auto",
             }}
           >
