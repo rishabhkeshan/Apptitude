@@ -14,7 +14,7 @@ import FormInput from './FormInput';
 
 function App() {
   return (
-    <div style={{margin:"0", padding:"0" }}>
+    <div className="main" style={{margin:"0", padding:"0" }}>
       <div className="laptop-container">
         <NavigationBar />
         <div className="flex-container">
