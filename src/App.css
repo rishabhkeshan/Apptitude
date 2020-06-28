@@ -12,6 +12,7 @@ width:100%;
 margin:0 auto;
 text-align: center;
 color:white;
+background-image: linear-gradient(#303136, #26272A);
 }
 
 .flex-container{
@@ -144,7 +145,7 @@ font-size: 0.6em;
   font-size: 1.2em !important;
 }
 .imga{
-  width: 20%;
+  width: 25vw;
   height:auto;
 }
 .animate {
@@ -206,7 +207,7 @@ display: none;
 }
 }
 }
-@media screen and (max-height: 420px) {
+@media screen and (max-height: 450px) {
 .footer{
 position:relative !important;
 }
@@ -214,7 +215,11 @@ position:relative !important;
   font-size: 0.5em;
 }
 .footer p img{
-  width:3vh;
+  width:1.5vw;
+  height:auto;
+}
+.imga{
+  width:13vw;
   height:auto;
 }
 }
