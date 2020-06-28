@@ -206,3 +206,15 @@ display: none;
 }
 }
 }
+@media screen and (max-height: 420px) {
+.footer{
+position:relative !important;
+}
+.footer p{
+  font-size: 0.5em;
+}
+.footer p img{
+  width:3vh;
+  height:auto;
+}
+}

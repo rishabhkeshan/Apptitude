@@ -53,7 +53,7 @@ body,html {
 body{
   padding-bottom: 100px;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
 }
 code {
 font-family: "Cerebri Sans",
