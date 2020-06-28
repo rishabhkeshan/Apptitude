@@ -15,7 +15,7 @@ import FormInput from './FormInput';
 function App() {
   return (
     <React.Fragment>
-    <div className="contained">
+    <div className="laptop-container">
       <NavigationBar />
       <div className="flex-container">
         <div className="column-left">
@@ -70,7 +70,7 @@ function App() {
       <Footer />   
     </div>
 
-        <div className="containe">
+        <div className="mobile-container-small">
          <NavigationBar/>
          <div className="contents">
           <Countdown classn="Countdown-col-elemen" eli="elii" el="ell"/>
@@ -113,7 +113,7 @@ function App() {
       </div>
 
       
-        <div className="containes">
+        <div className="mobile-container-large">
          <NavigationBar/>
          <div className="contentsh">
           <Countdown classn="Countdown-col-elemen" eli="elii" el="ell"/>
