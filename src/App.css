@@ -2,6 +2,7 @@
 display: flex;
 flex-direction: column;
 height:100%;
+box-sizing: border-box;
 width:100%;
 }
 .mobile-container-small, .mobile-container-large{
@@ -11,6 +12,7 @@ height:100%;
 width:100%;
 margin:0 auto;
 text-align: center;
+box-sizing: border-box;
 color:white;
 background-image: linear-gradient(#303136, #26272A);
 }
@@ -174,7 +176,7 @@ font-size: 0.6em;
    color: #C4C4C4;
  }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
 .mobile-container-small{
 display: none;
 }
@@ -186,7 +188,7 @@ display: none;
 }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
 .laptop-container{
 display: none;
 }
