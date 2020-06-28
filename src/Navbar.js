@@ -11,7 +11,7 @@ const Styles = styled.div`
   .navbar-brand {
     font-size: 1.4em;
     color: white;
-    margin-left:1.2em;
+    margin-left:0.3em;
     &:hover { color: #ddd; }
   }
 `;
@@ -25,7 +25,7 @@ export const NavigationBar = () => (
                <span style={{ color: "#7289D9" }}>App</span>titude
              </Navbar.Brand>
 
-             <Nav style={{ marginRight: "2em" }} className="ml-auto">
+             <Nav style={{ marginRight: "1.1em" }} className="ml-auto">
                <Nav.Item>
                  <Nav.Link href="http://www.acmvit.in" target="_blank">
                    About Us
