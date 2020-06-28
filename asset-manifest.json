@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Apptitude/static/css/main.fbfc54fc.chunk.css",
-    "main.js": "/Apptitude/static/js/main.cb6a2ecc.chunk.js",
-    "main.js.map": "/Apptitude/static/js/main.cb6a2ecc.chunk.js.map",
+    "main.js": "/Apptitude/static/js/main.53451bca.chunk.js",
+    "main.js.map": "/Apptitude/static/js/main.53451bca.chunk.js.map",
     "runtime-main.js": "/Apptitude/static/js/runtime-main.de88134a.js",
     "runtime-main.js.map": "/Apptitude/static/js/runtime-main.de88134a.js.map",
     "static/css/2.af3c1da9.chunk.css": "/Apptitude/static/css/2.af3c1da9.chunk.css",
     "static/js/2.5534c1a4.chunk.js": "/Apptitude/static/js/2.5534c1a4.chunk.js",
     "static/js/2.5534c1a4.chunk.js.map": "/Apptitude/static/js/2.5534c1a4.chunk.js.map",
     "index.html": "/Apptitude/index.html",
-    "precache-manifest.277107ee60b797356bd1a5cf6eb1480e.js": "/Apptitude/precache-manifest.277107ee60b797356bd1a5cf6eb1480e.js",
+    "precache-manifest.a0baece59c01e869d91f042ff8752bf8.js": "/Apptitude/precache-manifest.a0baece59c01e869d91f042ff8752bf8.js",
     "service-worker.js": "/Apptitude/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/Apptitude/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.fbfc54fc.chunk.css.map": "/Apptitude/static/css/main.fbfc54fc.chunk.css.map",
@@ -24,6 +24,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.5534c1a4.chunk.js",
     "static/css/main.fbfc54fc.chunk.css",
-    "static/js/main.cb6a2ecc.chunk.js"
+    "static/js/main.53451bca.chunk.js"
   ]
 }
