@@ -8,13 +8,13 @@ width:100%;
 .mobile-container-small, .mobile-container-large{
 display: flex;
 flex-direction: column;
-height:100%;
+height:88vh;
 width:100%;
 margin:0 auto;
+padding:0;
 text-align: center;
 box-sizing: border-box;
 color:white;
-background-image: linear-gradient(#303136, #26272A);
 }
 
 .flex-container{
