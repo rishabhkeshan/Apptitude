@@ -195,6 +195,14 @@ display: none;
 .laptop-container{
 display: none;
 }
+.footer p {
+  font-size: 0.8em;
+}
+
+.footer p img {
+  width: 2.0vw;
+  height: auto;
+}
 @media screen and (max-height: 700px) {
 .mobile-container-large, .laptop-container{
 display: none;
