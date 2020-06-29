@@ -90,7 +90,7 @@ function App() {
         <Footer />
       </div>
 
-      <div className="mobile-container-small">
+      {/* <div className="mobile-container-small">
         <NavigationBar />
         <div className="contents">
           <Countdown classn="Countdown-col-elemen" eli="elii" el="ell" />
@@ -134,7 +134,7 @@ function App() {
           </span>
         </div>
         <Footer />
-      </div>
+      </div> */}
 
       <div className="mobile-container-large">
         <NavigationBar />
@@ -166,7 +166,7 @@ function App() {
               marginBottom: "0",
             }}
           >
-            Event Date :<span className="des"> 10-11 July 2020</span>
+            Event Date :<span style={{ fontWeight: 300 }} > 10-11 July 2020</span>
           </h2>
           <br />
           <FormInput sub="sub" emai="emai" />
