@@ -90,6 +90,12 @@ color:white;
   justify-content: center;
   align-items: center;
 }
+.navbarBrand{
+    background: -webkit-linear-gradient(#8AA1EF, #313B99);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .eli{
   margin-left: 0.6em;
   margin-right: 0.6em;
@@ -220,12 +226,4 @@ position:relative !important;
 .mobile-container-large{
     background-image: linear-gradient(#303136, #26272A);
 }
-}
-@media (prefers-color-scheme: dark) {
-  .mobile-container-large{
-    color:white;
-  }
-  .sub{
-    background-color:#3A44A1;
-  }
 }

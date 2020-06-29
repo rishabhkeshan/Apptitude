@@ -16,13 +16,13 @@ const Styles = styled.div`
   }
 `;
 export const NavigationBar = () => (
-         <Styles style={{ backgroundColor: "#40454B", width:'100%' }}>
+         <Styles style={{ background: "#40454B", width:'100%' }}>
            <Navbar
              style={{ backgroundColor: "#40454B", width:'100%'  }}
              expand="lg"
            >
              <Navbar.Brand href="/">
-               <span style={{ color: "#7289D9" }}>App</span>titude
+               <span className="navbarBrand" >App</span>titude
              </Navbar.Brand>
 
              <Nav style={{ marginRight: "1.1em" }} className="ml-auto">

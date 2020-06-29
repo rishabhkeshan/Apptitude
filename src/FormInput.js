@@ -102,7 +102,7 @@ class FormInput extends React.Component {
           className={`${this.props.sub}`}
           ref="btn"
           style={{
-            backgroundColor: `${this.state.backColor}`,
+            backgroundImage: `linear-gradient(${this.state.backColor}, ${this.state.backColor})`,
             color: "white",
             border: "none",
             borderRadius: "5px",
