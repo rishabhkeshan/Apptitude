@@ -207,7 +207,7 @@ display: none;
   display:flex;
 }
 }
-/* @media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
 .footer{
 position:relative !important;
 }
@@ -231,4 +231,4 @@ position:relative !important;
 .mobile-container-large{
     background-image: linear-gradient(#303136, #26272A);
 }
-} */
+}
