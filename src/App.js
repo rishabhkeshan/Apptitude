@@ -90,52 +90,6 @@ function App() {
         <Footer />
       </div>
 
-      {/* <div className="mobile-container-small">
-        <NavigationBar />
-        <div className="contents">
-          <Countdown classn="Countdown-col-elemen" eli="elii" el="ell" />
-          <br />
-          <p
-            className="description"
-            style={{
-              fontSize: "1em",
-              fontWeight: "500",
-              lineHeight: "125%",
-              maxWidth: "85vw",
-              margin: "0 auto",
-            }}
-          >
-            Running out of ideas, this endless quarantine? Well worry not
-            student app devs, ACM-VIT has got your back. Sit back and get
-            thinking as our team takes on the wheel and throws you features that
-            now you have to integrate into one functional unit. Bring your plus
-            one or go solo and test your creative boundaries to give birth to an
-            innovation within 24 hours.
-          </p>
-          <br />
-          <h2
-            className="des"
-            style={{
-              fontWeight: "800",
-              marginBottom: "0",
-            }}
-          >
-            Event Date :
-            <span style={{ fontWeight: 300 }}> 10-11 July 2020</span>
-          </h2>
-          <br />
-          <FormInput sub="sub" emai="emai" />
-          <br />
-          <h1 className="desc">Coming soon on</h1>
-          <span>
-            <img className="imga" src={PlayStore} alt="Play Store link"></img>
-            <span> </span>
-            <img className="imga" src={AppStore} alt="App store link"></img>
-          </span>
-        </div>
-        <Footer />
-      </div> */}
-
       <div className="mobile-container-large">
         <NavigationBar />
         <div className="contentsh">

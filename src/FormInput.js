@@ -9,22 +9,51 @@ class FormInput extends React.Component {
     this.state = {
       email: "",
       submitButton: "Notify Me",
-      backColor: "#3A44A1"
+      backColor: "#3A44A1",
+      exists:"false"
     };
   }
-  handleSubmit = (e) => {
-    e.preventDefault();
-    const db = firebase.firestore();
-    db.collection("UserEmail").add({
-      email:this.state.email
-    });
-    this.refs.btn.setAttribute("disabled", "disabled");
-      setTimeout(this.setState({
-    email: "",
-    submitButton:"Added",
-    backColor:"#5cb85c"
-  }),9000);
-  };
+    handleSubmit = (e) => {
+        e.preventDefault();
+        const db = firebase.firestore();
+        var userEmail=this.state.email;
+        db.collection("UserEmail")
+          .get()
+          .then((snapshot) => {
+            snapshot.docs.forEach((doc) => {
+              if (
+                doc.data().email.trim().toLowerCase() ===
+                userEmail.trim().toLowerCase()
+              ) {
+                alert("Email already registered");
+                this.setState({
+                  exists: "true",
+                });
+              }
+            });
+          })
+          .then((data) => {
+            if (this.state.exists === "false"){
+                db.collection("UserEmail").add({
+                    email: this.state.email,
+                });
+                this.refs.btn.setAttribute("disabled", "disabled");
+                setTimeout(
+                this.setState({
+                    email: "",
+                    submitButton: "Added",
+                    backColor: "#5cb85c",
+                }),
+                9000
+                );
+            }
+            else{
+                this.setState({
+                  exists: "false",
+                });
+            }
+          });
+   };
   updateInput = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
