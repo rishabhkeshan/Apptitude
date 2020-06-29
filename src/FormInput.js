@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import firebase from "./Firestore";
+// import firebase from "./Firestore";
 import classNames from "classnames";
 import styles from './App.css';
 class FormInput extends React.Component {
