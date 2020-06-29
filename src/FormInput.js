@@ -29,7 +29,7 @@ class FormInput extends React.Component {
                 this.setState({
                   exists: "true",
                 });
-              }
+            }
             });
           })
           .then((data) => {
