@@ -14,22 +14,23 @@ class FormInput extends React.Component {
   }
   handleSubmit = (e) => {
     e.preventDefault();
-    const db = firebase.firestore();
-    db.collection("UserEmail").add({
-      email:this.state.email
-    });
-    this.refs.btn.setAttribute("disabled", "disabled");
-      setTimeout(this.setState({
-    email: "",
-    submitButton:"Added",
-    backColor:"#5cb85c"
-  }),9000);
+//     const db = firebase.firestore();
+//     db.collection("UserEmail").add({
+//       email:this.state.email
+//     });
+//     this.refs.btn.setAttribute("disabled", "disabled");
+//       setTimeout(this.setState({
+//     email: "",
+//     submitButton:"Added",
+//     backColor:"#5cb85c"
+//   }),9000);
   };
   updateInput = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value,
-      submitButton: "Notify Me",
-    });
+      e.preventDefault();
+    // this.setState({
+    //   [e.target.name]: e.target.value,
+    //   submitButton: "Notify Me",
+    // });
   };
   render() {
     return (
