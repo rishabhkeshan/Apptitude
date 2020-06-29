@@ -124,10 +124,7 @@ function App() {
             <span style={{ fontWeight: 300 }}> 10-11 July 2020</span>
           </h2>
           <br />
-          {/* <FormInput sub="sub" emai="emai" /> */}
-          <form>
-            <input type="email" />
-          </form>
+          <FormInput sub="sub" emai="emai" />
           <br />
           <h1 className="desc">Coming soon on</h1>
           <span>
@@ -174,10 +171,7 @@ function App() {
             Event Date :<span className="des"> 10-11 July 2020</span>
           </h2>
           <br />
-          {/* <FormInput sub="sub" emai="emai" /> */}
-          <form>
-            <input type="email" />
-          </form>
+          <FormInput sub="sub" emai="emai" />
           <br />
           <h1 className="desc">Coming soon on</h1>
           <span>
