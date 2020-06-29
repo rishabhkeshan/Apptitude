@@ -4,7 +4,7 @@ import firebase from "./Firestore";
 import classNames from "classnames";
 import styles from './App.css';
 import ReCAPTCHA from "react-google-recaptcha";
-var recaptchaRef = React.createRef();
+
 
 class FormInput extends React.Component {
   constructor() {
@@ -13,16 +13,23 @@ class FormInput extends React.Component {
       email: "",
       submitButton: "Notify Me",
       backColor: "#3A44A1",
-      exists:"false"
+      exists:"false",
+      value: "[empty]"
     };
+    this.recaptchaRef = React.createRef();
   }
-  onChange=(value)=> {
+  handleChange=value=> {
       console.log("Captcha value:", value);
+      this.setState({ value });
   }
     handleSubmit = (e) => {
         e.preventDefault();
-
-        recaptchaRef.current.execute();
+        this.recaptchaRef.current.execute();
+        if(this.state.value===null){
+            alert("Cannot contact ReCaptcha. Please try again")
+            this.recaptchaRef.reset();
+        }
+        else{
         const db = firebase.firestore();
         var userEmail=this.state.email;
         db.collection("UserEmail")
@@ -61,6 +68,7 @@ class FormInput extends React.Component {
                 });
             }
           });
+        }
    };
   updateInput = (e) => {
     this.setState({
@@ -118,12 +126,14 @@ class FormInput extends React.Component {
           value={this.state.submitButton}
         />
             <ReCAPTCHA
-      ref={recaptchaRef}
+      ref={this.recaptchaRef}
       size="invisible"
       theme="dark"
       badge="bottomright"
       sitekey = "6LeW8qoZAAAAAMTDQ2GI-c4zyLhREiIWzhlP18kb"
-      onChange= {this.onChange}
+      onChange = {
+          this.handleChange
+      }
     />
       </form>
     );
