@@ -14,7 +14,7 @@ import FormInput from './FormInput';
 
 function App() {
   return (
-    <div className="main" style={{margin:"0", padding:"0" }}>
+    <div className="main" style={{ margin: "0", padding: "0" }}>
       <div className="laptop-container">
         <NavigationBar />
         <div className="flex-container">
@@ -133,7 +133,9 @@ function App() {
             <img className="imga" src={AppStore} alt="App store link"></img>
           </span>
         </div>
-        <Footer />
+        <div className="foot" style={{ margin: "0", padding: "0" }}>
+          <Footer />
+        </div>
       </div>
 
       <div className="mobile-container-large">
@@ -178,7 +180,9 @@ function App() {
             <img className="imga" src={AppStore} alt="App store link"></img>
           </span>
         </div>
-        <Footer />
+        <div className="foot" style={{ margin: "0", padding: "0" }}>
+          <Footer />
+        </div>
       </div>
     </div>
   );
