@@ -93,7 +93,7 @@ function App() {
       <div className="mobile-container-small">
         <NavigationBar />
         <div className="contents">
-          <Countdown classn="Countdown-col-elemen" eli="elii" el="ell" />
+          {/* <Countdown classn="Countdown-col-elemen" eli="elii" el="ell" />
           <br />
           <p
             className="description"
@@ -123,7 +123,7 @@ function App() {
             Event Date :
             <span style={{ fontWeight: 300 }}> 10-11 July 2020</span>
           </h2>
-          <br />
+          <br /> */}
           <FormInput sub="sub" emai="emai" />
           <br />
           <h1 className="desc">Coming soon on</h1>
@@ -141,7 +141,7 @@ function App() {
       <div className="mobile-container-large">
         <NavigationBar />
         <div className="contentsh">
-          <Countdown classn="Countdown-col-elemen" eli="elii" el="ell" />
+          {/* <Countdown classn="Countdown-col-elemen" eli="elii" el="ell" />
           <br />
           <p
             className="description"
@@ -170,7 +170,7 @@ function App() {
           >
             Event Date :<span className="des"> 10-11 July 2020</span>
           </h2>
-          <br />
+          <br /> */}
           <FormInput sub="sub" emai="emai" />
           <br />
           <h1 className="desc">Coming soon on</h1>
