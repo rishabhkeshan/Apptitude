@@ -3,6 +3,9 @@ import './App.css';
 import firebase from "./Firestore";
 import classNames from "classnames";
 import styles from './App.css';
+import ReCAPTCHA from "react-google-recaptcha";
+var recaptchaRef = React.createRef();
+
 class FormInput extends React.Component {
   constructor() {
     super();
@@ -13,8 +16,13 @@ class FormInput extends React.Component {
       exists:"false"
     };
   }
+  onChange=(value)=> {
+      console.log("Captcha value:", value);
+  }
     handleSubmit = (e) => {
         e.preventDefault();
+
+        recaptchaRef.current.execute();
         const db = firebase.firestore();
         var userEmail=this.state.email;
         db.collection("UserEmail")
@@ -109,6 +117,14 @@ class FormInput extends React.Component {
           type="submit"
           value={this.state.submitButton}
         />
+            <ReCAPTCHA
+      ref={recaptchaRef}
+      size="invisible"
+      theme="dark"
+      badge="bottomright"
+      sitekey = "6LeW8qoZAAAAAMTDQ2GI-c4zyLhREiIWzhlP18kb"
+      onChange= {this.onChange}
+    />
       </form>
     );
   }
