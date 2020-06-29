@@ -37,7 +37,7 @@ class FormInput extends React.Component {
                 db.collection("UserEmail").add({
                     email: this.state.email,
                 });
-                this.refs.btn.setAttribute("disabled", "disabled");
+                // this.refs.btn.setAttribute("disabled", "disabled");
                 setTimeout(
                 this.setState({
                     email: "",
@@ -58,6 +58,7 @@ class FormInput extends React.Component {
     this.setState({
       [e.target.name]: e.target.value,
       submitButton: "Notify Me",
+      backColor: "#3A44A1",
     });
   };
   render() {
