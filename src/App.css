@@ -221,3 +221,11 @@ position:relative !important;
     background-image: linear-gradient(#303136, #26272A);
 }
 }
+@media (prefers-color-scheme: dark) {
+  .mobile-container-large{
+    color:white;
+  }
+  .sub{
+    background-color:#3A44A1;
+  }
+}
