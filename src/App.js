@@ -48,7 +48,7 @@ function App() {
             <h2 style={{ fontWeight: "700" }}>
               <strong>Event Date</strong>
             </h2>
-            <p>10-11 July, 2020</p>
+            <p>24-25 July, 2020</p>
             <br />
             <h2>Coming soon on</h2>
             <span>
@@ -120,7 +120,7 @@ function App() {
               marginBottom: "0",
             }}
           >
-            Event Date :<span style={{ fontWeight: 300 }} > 10-11 July 2020</span>
+            Event Date :<span style={{ fontWeight: 300 }} > 24-25 July 2020</span>
           </h2>
           <br />
           <FormInput sub="sub" emai="emai" />
