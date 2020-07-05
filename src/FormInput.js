@@ -14,12 +14,11 @@ class FormInput extends React.Component {
       submitButton: "Notify Me",
       backColor: "#3A44A1",
       exists:"false",
-      value: "[empty]"
+      value: null,
     };
     this.recaptchaRef = React.createRef();
   }
   handleChange=value=> {
-      console.log("Captcha value:", value);
       this.setState({ value });
   }
     handleSubmit = (e) => {
@@ -27,7 +26,6 @@ class FormInput extends React.Component {
         this.recaptchaRef.current.execute();
         if(this.state.value===null){
             alert("Cannot contact ReCaptcha. Please try again")
-            this.recaptchaRef.reset();
         }
         else{
         const db = firebase.firestore();
