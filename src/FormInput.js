@@ -14,7 +14,7 @@ class FormInput extends React.Component {
       submitButton: "Notify Me",
       backColor: "#3A44A1",
       exists:"false",
-      value: null,
+      value: "",
     };
     this.recaptchaRef = React.createRef();
   }
