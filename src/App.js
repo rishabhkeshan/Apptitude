@@ -50,7 +50,7 @@ function App() {
             </h2>
             <p>24-25 July, 2020</p>
             <br />
-            <h2>Coming soon on</h2>
+            <h2>Event App Coming Soon on</h2>
             <span>
               <img
                 className="imgaa"
@@ -125,7 +125,7 @@ function App() {
           <br />
           <FormInput sub="sub" emai="emai" />
           <br />
-          <h1 className="desc">Coming soon on</h1>
+          <h1 className="desc">Event App Coming Soon on</h1>
           <span>
             <img className="imga" src={PlayStore} alt="Play Store link"></img>
             <span> </span>
