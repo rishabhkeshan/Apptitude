@@ -48,7 +48,7 @@ function App() {
             <h2 style={{ fontWeight: "700" }}>
               <strong>Event Date</strong>
             </h2>
-            <p>24-25 July, 2020</p>
+            <p>25-26 July, 2020</p>
             <br />
             <span>
               <a href="https://play.google.com/store/apps/details?id=com.acmvit.apphack" target="_blank" rel="noopener noreferrer">
@@ -117,7 +117,7 @@ function App() {
               marginBottom: "0",
             }}
           >
-            Event Date :<span style={{ fontWeight: 300 }} > 24-25 July 2020</span>
+            Event Date :<span style={{ fontWeight: 300 }} > 25-26 July 2020</span>
           </h2>
           <br />
           <FormInput sub="sub" emai="emai" />
