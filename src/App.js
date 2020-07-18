@@ -50,13 +50,10 @@ function App() {
             </h2>
             <p>24-25 July, 2020</p>
             <br />
-            <h2>Event App Coming Soon on</h2>
             <span>
-              <img
-                className="imgaa"
-                src={PlayStore}
-                alt="Play Store link"
-              ></img>
+              <a href="https://play.google.com/store/apps/details?id=com.acmvit.apphack" target="_blank" rel="noopener noreferrer">
+                <img className="imgaa" src={PlayStore} alt="Play Store link"></img>
+              </a>
               <span> </span>
               <img className="imgaa" src={AppStore} alt="App store link"></img>
             </span>
@@ -125,9 +122,10 @@ function App() {
           <br />
           <FormInput sub="sub" emai="emai" />
           <br />
-          <h1 className="desc">Event App Coming Soon on</h1>
           <span>
-            <img className="imga" src={PlayStore} alt="Play Store link"></img>
+            <a href="https://play.google.com/store/apps/details?id=com.acmvit.apphack" target="_blank" rel="noopener noreferrer">
+              <img className="imga" src={PlayStore} alt="Play Store link"></img>
+              </a>
             <span> </span>
             <img className="imga" src={AppStore} alt="App store link"></img>
           </span>

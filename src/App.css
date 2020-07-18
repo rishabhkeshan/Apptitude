@@ -148,9 +148,13 @@ font-size: 0.6em;
 .des{
   font-size: 1.2em !important;
 }
+.imgaa{
+  width: 200px;
+  height:65px;
+}
 .imga{
-  width: 25vw;
-  height:auto;
+  width: 150px;
+  height:50px;
 }
 .animate {
   transition: transform 8.35s ease-in-out;
@@ -220,8 +224,8 @@ position:relative !important;
   height:auto;
 }
 .imga{
-  width:13vw;
-  height:auto;
+  width:50px;
+  height:20px;
 }
 .mobile-container-large{
     background-image: linear-gradient(#303136, #26272A);
