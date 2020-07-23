@@ -9,7 +9,6 @@ import {
 import AppStore from "./AppStore.png";
 import PlayStore from "./PlayStore.png";
 import Footer from './Footer';
-import FormInput from './FormInput';
 
 
 function App() {
@@ -50,13 +49,6 @@ function App() {
             </h2>
             <p>25-26 July, 2020</p>
             <br />
-            <span>
-              <a href="https://play.google.com/store/apps/details?id=com.acmvit.apphack" target="_blank" rel="noopener noreferrer">
-                <img className="imgaa" src={PlayStore} alt="Play Store link"></img>
-              </a>
-              <span> </span>
-              <img className="imgaa" src={AppStore} alt="App store link"></img>
-            </span>
           </div>
           <div className="column-right">
             <Countdown classn="Countdown-col-element" eli="eli" el="el" />
@@ -68,20 +60,15 @@ function App() {
                 fontSize: "2.1em",
               }}
             >
-              <p
-                style={{
-                  marginBottom: "0",
-                  paddingBottom: "0",
-                  lineHeight: "90%",
-                }}
-              >
-                Get notified
-              </p>
-              <p style={{ marginTop: "0", paddingBottom: "0" }}>
-                when we launch
-              </p>
             </h2>
-            <FormInput sub="subm" emai="ema" />
+            <span>
+            <a style={{marginRight:"10px", float:"left"}} href="https://play.google.com/store/apps/details?id=com.acmvit.apphack" target="_blank" rel="noopener noreferrer">
+              <img className="imgaa" src={PlayStore} alt="Play Store link"></img>
+            </a>
+            <a href="http://tiny.cc/apptitude-ios" target="_blank" rel="noopener noreferrer">
+              <img className="imgaa" src={AppStore} alt="App store link"></img>
+            </a>
+            </span>
           </div>
         </div>
         <Footer />
@@ -120,14 +107,14 @@ function App() {
             Event Date :<span style={{ fontWeight: 300 }} > 25-26 July 2020</span>
           </h2>
           <br />
-          <FormInput sub="sub" emai="emai" />
           <br />
           <span>
-            <a href="https://play.google.com/store/apps/details?id=com.acmvit.apphack" target="_blank" rel="noopener noreferrer">
+            <a style={{marginBottom:"10px", marginRight:"10px"}} href="https://play.google.com/store/apps/details?id=com.acmvit.apphack" target="_blank" rel="noopener noreferrer">
               <img className="imga" src={PlayStore} alt="Play Store link"></img>
               </a>
-            <span> </span>
-            <img className="imga" src={AppStore} alt="App store link"></img>
+            <a href="http://tiny.cc/apptitude-ios" target="_blank" rel="noopener noreferrer">
+              <img className="imga" src={AppStore} alt="App store link"></img>
+              </a>
           </span>
         </div>
         <Footer />
